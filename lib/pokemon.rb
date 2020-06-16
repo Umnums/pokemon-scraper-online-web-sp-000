@@ -22,6 +22,6 @@ class Pokemon
     # print row
     print hash
     obj = self.new(hash)
-    # print obj
+    print obj.name
   end
 end
