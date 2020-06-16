@@ -19,9 +19,9 @@ class Pokemon
     SQL
     row = db.execute(sql, id)[0]
     hash = {:id => row[0], :name => row[1], :type => row[2], :db => db}
-    print row
-    print hash
+    # print row
+    # print hash
     obj = self.new(hash)
-    print obj
+    # print obj
   end
 end
