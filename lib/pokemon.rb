@@ -12,12 +12,12 @@ class Pokemon
    db.execute(sql, name, type)
   end
 
-  def self.find(id)
+  def self.find(id,db)
     sql = <<-SQL
     SELECT * FROM pokemon
     WHERE id = ?
     SQL
     row = db.execute(sql, id)
-    self.new(row[0],row[1],row[2],@db)
+    self.new(row[0],row[1],row[2],db)
   end
 end
