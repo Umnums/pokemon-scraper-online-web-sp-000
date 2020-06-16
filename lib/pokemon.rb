@@ -19,6 +19,6 @@ class Pokemon
     SQL
     row = db.execute(sql, id)
     hash = {:id => row[0], :name => row[1], :type => row[2], :db => db}
-    self.new(row[0],row[1],row[2],db)
+    self.new(hash)
   end
 end
