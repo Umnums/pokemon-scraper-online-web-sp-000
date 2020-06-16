@@ -4,4 +4,6 @@ class Pokemon
   def initialize(id:, name:, type:, db:)
 
   end
+
+  def self.save
 end
